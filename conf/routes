@@ -1,0 +1,12 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /register/getuser                               controllers.RegisterController.getAll
+GET     /register/getById                        controllers.RegisterController.getById(id:String)
+DELETE  /register/delete                            controllers.RegisterController.delete(id:String)
+PUT     /register/update                                controllers.RegisterController.update
+POST    /register/adduser                               controllers.RegisterController.addNewUser
+
